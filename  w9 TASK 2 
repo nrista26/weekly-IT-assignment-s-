@@ -1,0 +1,95 @@
+<html>
+<head>
+<style>
+/* Sets the whole page background to sky blue and default text color/font */
+body {
+background-color: #00BFFF;
+color: #330000;
+font-family: Verdana;
+}
+
+/* Header section holding the tavern name */
+div.header {
+background-color: #ccaa66;
+text-align: center;
+padding: 10px;
+}
+/* text-align:center makes the heading sit in the middle like the picture shows */
+
+/* Left navigation column with the menu links */
+div.nav {
+float: left;
+width: 120px;
+background-color: #E8D882;
+height: 300px;
+padding: 10px;
+}
+/* float:left pushes this div to the left side so the content div can sit next to it */
+
+/* Removes the default blue underlined link style so links look plain */
+div.nav a {
+display: block;
+color: #330000;
+text-decoration: none;
+}
+/* display:block makes each link take its own line, like a list of menu items */
+
+/* Right side main content area */
+div.content {
+float: left;
+width: 400px;
+background-color: #f1e8b0;
+height: 300px;
+padding: 10px;
+}
+/* float:left again so this sits right next to the nav div, forming two columns */
+
+/* Footer section at the bottom of the page */
+div.footer {
+clear: both;
+background-color: #ccaa66;
+text-align: center;
+padding: 10px;
+}
+/* clear:both is needed here because nav and content are floated - 
+   without it, the footer would try to float up next to them instead of staying below */
+</style>
+</head>
+<body>
+
+<!-- Header with the pub name -->
+<div class="header">
+<h1>Stinky Pete's Pirate Tavern</h1>
+</div>
+
+<!-- Left navigation menu -->
+<div class="nav">
+<a href="#">Home</a>
+<a href="#">Grog</a>
+<a href="#">Shanties</a>
+<a href="#">Become a swab</a>
+</div>
+
+<!-- Main content with the description and list of items -->
+<div class="content">
+<p>Avast maties! Here ye'll be findin' all these delights...</p>
+<ul>
+<li>Great grog</li>
+<li>All the rum you can drink</li>
+<li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+<li>Wenches and swabs for every taste</li>
+<li>Salty seadogs singin' shanties</li>
+</ul>
+<p>Berth 23<br>
+Nottingham Docks<br>
+0115 9324567</p>
+</div>
+
+<!-- Footer with copyright and contact email -->
+<div class="footer">
+Copyright &copy; 2011 Stinky Pete's Pirate Tavern<br>
+stinkypete@arrrr.com
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+/* Column 1 header box - plain white background like the original table header */
+div.header1 {width:210px;height:40px;background-color:white;border:1px solid black; 
+position:relative;left:0px;top:0px;}
+/* text-align center makes the heading text sit in the middle of the box */
+
+/* Column 2 header box - moved right by 210px using left, so it sits next to header1 */
+div.header2 {width:210px;height:40px;background-color:white;border:1px solid black;
+position:relative;left:210px;top:-40px;}
+/* top:-40px pulls it back up so it lines up with header1 instead of stacking below it */
+
+/* Column 3 header box - moved right again by 420px total */
+div.header3 {width:210px;height:40px;background-color:white;border:1px solid black;
+position:relative;left:420px;top:-80px;}
+/* top:-80px pulls it up twice (once for each row above) so all 3 headers sit in one line */
+
+/* Blue box under Column 1 - holds the numbered list */
+div.blue1 {width:210px;height:250px;background-color:lightblue;
+position:relative;left:0px;top:-80px;padding:10px;}
+/* padding:10px stops the list text from touching the edges of the box */
+
+/* Yellow box under Column 2 - just contains the letter B */
+div.yellow1 {width:210px;height:80px;background-color:yellow;
+position:relative;left:210px;top:-330px;text-align:center;}
+/* text-align:center puts the B in the middle of the box, like in the original table */
+
+/* Red box under Column 3 - just contains the letter C */
+div.red1 {width:210px;height:80px;background-color:red;
+position:relative;left:420px;top:-410px;text-align:center;}
+
+/* Green box - stretches under both Column 2 and Column 3, holds the unnumbered list */
+div.green1 {width:420px;height:170px;background-color:green;color:white;
+position:relative;left:210px;top:-410px;padding:10px;}
+/* width:420px makes it span two columns worth of space (210px x 2) */
+/* color:white makes the list text visible against the dark green background */
+</style>
+</head>
+<body>
+
+<!-- Table headers, one div per column -->
+<div class="header1">Column 1</div>
+<div class="header2">Column 2</div>
+<div class="header3">Column 3</div>
+
+<!-- Blue box with a numbered list, using <ol> because the items are in order -->
+<div class="blue1">
+A numbered list:
+<ol>
+<li>Able</li>
+<li>Baker</li>
+<li>Charlie</li>
+<li>Delta</li>
+<li>Echo</li>
+</ol>
+</div>
+
+<!-- Yellow box just shows a single letter -->
+<div class="yellow1">B</div>
+
+<!-- Red box just shows a single letter -->
+<div class="red1">C</div>
+
+<!-- Green box with an unnumbered list, using <ul> because order doesn't matter -->
+<div class="green1">
+An unnumbered list:
+<ul>
+<li>Pounds</li>
+<li>Dollars</li>
+<li>Euro</li>
+<li>Yen</li>
+<li>Roubles</li>
+</ul>
+</div>
+
+</body>
+</html>

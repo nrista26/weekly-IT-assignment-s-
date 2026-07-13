@@ -1,0 +1,184 @@
+<html>
+<head>
+<style>
+/* Basic font for the whole page */
+body {
+font-family: Arial;
+}
+
+/* Top bar holding logo and navigation menu */
+div.top {
+overflow: hidden;
+border-bottom: 1px solid black;
+padding: 10px;
+}
+/* overflow:hidden makes this div stretch to contain the floated logo and nav inside it -
+   without it, the div would collapse to 0 height because floated items don't count normally */
+
+/* Logo placeholder box on the left */
+div.logo {
+width: 100px;
+height: 60px;
+border: 1px solid black;
+text-align: center;
+float: left;
+}
+/* float:left pushes the logo to the left side of the top bar */
+
+/* Navigation menu container on the right */
+div.nav {
+float: right;
+}
+/* float:right pushes the whole nav menu to the right side, opposite the logo */
+
+/* Individual navigation links styled like buttons */
+div.nav a {
+float: left;
+margin-left: 5px;
+border: 1px solid black;
+padding: 5px;
+text-decoration: none;
+color: black;
+}
+/* float:left makes the links sit next to each other in a row instead of stacking */
+
+/* Section heading */
+h2 {
+clear: both;
+padding-left: 10px;
+}
+/* clear:both makes sure this heading starts below the floated top bar, not next to it */
+
+/* Each company info box */
+div.card {
+width: 400px;
+background-color: #f2f2f2;
+float: left;
+margin: 10px;
+padding: 10px;
+}
+/* float:left lets the cards sit two per row, matching the wireframe layout */
+
+/* Small logo placeholder inside each card */
+div.cardimg {
+width: 80px;
+height: 80px;
+border: 1px solid black;
+text-align: center;
+float: left;
+margin-right: 10px;
+}
+/* float:left lets the text next to it (company name, CEO) sit beside the image */
+
+/* Footer section at the bottom with 3 columns */
+div.footer {
+clear: both;
+border-top: 1px solid black;
+padding: 10px;
+overflow: hidden;
+}
+/* clear:both makes sure footer appears below the cards, not floating next to them */
+/* overflow:hidden keeps this div tall enough to contain the floated footer columns inside */
+
+/* Each column inside the footer (site map, testimonials, contact info) */
+div.footercol {
+width: 250px;
+float: left;
+padding: 10px;
+}
+/* float:left arranges the 3 footer sections side by side */
+
+/* Google Map placeholder box */
+div.mapimg {
+width: 150px;
+height: 90px;
+border: 1px solid black;
+text-align: center;
+float: left;
+margin-right: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- Top bar with logo and navigation -->
+<div class="top">
+<div class="logo">Logo</div>
+<div class="nav">
+<a href="#">Home</a>
+<a href="#">About Us</a>
+<a href="#">Services</a>
+<a href="#">Who We Work With</a>
+<a href="#">Contact</a>
+</div>
+</div>
+
+<!-- Page title -->
+<h2>Who We Work With</h2>
+
+<!-- First company card -->
+<div class="card">
+<div class="cardimg">Company Logo</div>
+<h3>Coca Cola</h3>
+<p>Steve Jobs - CEO</p>
+<p>Working with Rees... Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+</div>
+
+<!-- Second company card -->
+<div class="card">
+<div class="cardimg">Company Logo</div>
+<h3>Coca Cola</h3>
+<p>Steve Jobs - CEO</p>
+<p>Working with Rees... Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+</div>
+
+<!-- Third company card -->
+<div class="card">
+<div class="cardimg">Company Logo</div>
+<h3>Coca Cola</h3>
+<p>Steve Jobs - CEO</p>
+<p>Working with Rees... Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+</div>
+
+<!-- Fourth company card -->
+<div class="card">
+<div class="cardimg">Company Logo</div>
+<h3>Coca Cola</h3>
+<p>Steve Jobs - CEO</p>
+<p>Working with Rees... Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+</div>
+
+<!-- Footer with 3 side by side sections -->
+<div class="footer">
+
+<!-- Site map links -->
+<div class="footercol">
+<b>Site Map</b><br>
+<a href="#">Home</a><br>
+<a href="#">About Us</a><br>
+<a href="#">Services</a><br>
+<a href="#">Who We Work</a><br>
+<a href="#">Contact</a>
+</div>
+
+<!-- Client testimonial text -->
+<div class="footercol">
+<b>Client Testimonials</b>
+<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at.</p>
+<p>Steve Bulliy, CEO Windsor Foods</p>
+</div>
+
+<!-- Map and contact details -->
+<div class="footercol">
+<div class="mapimg">Google Map</div>
+<b>Where are we?</b><br>
+Calle de la Oficina 20,<br>
+28029, Madrid<br>
+Tel: 91 756<br>
+Mobile +34
+</div>
+
+</div>
+
+</body>
+</html>
